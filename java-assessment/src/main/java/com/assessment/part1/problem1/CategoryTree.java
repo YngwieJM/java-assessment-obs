@@ -40,11 +40,11 @@ public class CategoryTree {
                 visitState.put(category.getId(), 0);
             }
 
-            for (Category root: roots){
-                if(visitState.get(root.getId()) == 0){
-                    detectCycle(root, visitState);
+            for (Category category : categories) {
+                if (visitState.get(category.getId()) == 0) {
+                    detectCycle(category, visitState);
                 }
-            }
+}
 
         return roots;
             

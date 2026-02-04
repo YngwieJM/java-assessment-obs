@@ -1,12 +1,9 @@
-package com.assessment;
+package com.assessment.part1.problem1;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.assessment.part1.problem1.Category;
-import com.assessment.part1.problem1.CategoryTree;
-
-public class Problem1ManualTest {
+public class Main {
 
     public static void main(String[] args) {
         // Prepare input (INTENTIONALLY random order)
@@ -17,6 +14,7 @@ public class Problem1ManualTest {
         categories.add(new Category(3, "PC", 1));
         categories.add(new Category(2, "Laptops", 1));
         categories.add(new Category(5, "Fashion", null));
+
 
         // Build tree
         CategoryTree treeBuilder = new CategoryTree();
