@@ -6,7 +6,6 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 
-
 public class ProductFilter {
  
     public static class Product{
@@ -69,7 +68,7 @@ public class ProductFilter {
 
         List<Product> result = pf.filterProducts(products, 100.0, 1000.0, "Electronics");
         List<Product> result2 = pf.filterProducts(products, 50.0, 70.0, "Fashion");
-
+     
         System.out.println("Result Size: " + result.size());
         System.out.println("Result2 Size: " + result2.size());
     }
