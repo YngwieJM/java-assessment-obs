@@ -18,7 +18,7 @@ public class Main {
 
         // Build tree
         CategoryTree treeBuilder = new CategoryTree();
-        List<Category> roots = treeBuilder.buildCategorysTree(categories);
+        List<Category> roots = treeBuilder.buildCategoriesTree(categories);
 
         // Print result
         for (Category root : roots) {

@@ -6,9 +6,13 @@ import java.util.List;
 import java.util.Map;
 
 public class CategoryTree {
-    public List<Category> buildCategorysTree(List<Category> categories) {
+    public List<Category> buildCategoriesTree(List<Category> categories) {
         if(categories == null){
             throw new IllegalArgumentException("Input category list cannot be null");
+        }
+
+        for (Category category : categories){
+            category.setChildren(new ArrayList<>());
         }
 
 

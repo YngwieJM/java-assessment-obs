@@ -39,15 +39,15 @@ public class ProductFilter {
         }
     }
 
-    public List<Product> filterProducts(List<Product> products, double minPrice, double maxPrice, String category){
+    public List<Product> filterProducts(List<Product> products, Double minPrice, Double maxPrice, String category){
 
         Predicate<Product> predicate = product -> true;
 
-        if (minPrice != 0){
+        if (minPrice != null){
             predicate = predicate.and(product -> product.getPrice() >= minPrice);
         }
 
-        if (maxPrice != 0){
+        if (maxPrice != null){
             predicate = predicate.and(product -> product.getPrice() <= maxPrice);
         }
 
