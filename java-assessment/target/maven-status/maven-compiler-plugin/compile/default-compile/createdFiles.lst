@@ -8,4 +8,5 @@ com/assessment/part1/problem1/Main.class
 com/assessment/part2/model/Category.class
 com/assessment/part1/problem2/ProductFilter.class
 com/assessment/part2/handler/GlobalExceptionHandler$ErrorResponse.class
+com/assessment/part2/controller/CategoryController.class
 com/assessment/part2/handler/GlobalExceptionHandler.class
