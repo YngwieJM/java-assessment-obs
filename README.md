@@ -26,6 +26,7 @@ without unnecessary frameworks or overengineering.
 **Problem 1 – Category Tree Builder**
 **Objective**
 Transform a flat list of categories into a hierarchical tree structure using ```parentId```.
+
 **Thought Process**
 - Input order is arbitrary → indexing is required
 - Categories are stored in a ```Map``` for fast parent lookup
